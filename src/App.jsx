@@ -1,12 +1,16 @@
-// import { useState } from "react";
-import "./App.css";
+import { Paper } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const darkTheme = createTheme({ palette: { mode: "dark" } });
 
 function App() {
 
 	return (
-		<main>
-      Hello World
-		</main>
+		<ThemeProvider theme={darkTheme}>
+			<Paper>
+				Hello World
+			</Paper>
+		</ThemeProvider>
 	);
 }
 
