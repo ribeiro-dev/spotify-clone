@@ -1,14 +1,15 @@
-import { Paper } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { Paper, ThemeProvider } from "@mui/material";
 
-const darkTheme = createTheme({ palette: { mode: "dark" } });
+import AppTheme from "./assets/theme";
+
+import Index from "./pages/Index";
 
 function App() {
 
 	return (
-		<ThemeProvider theme={darkTheme}>
-			<Paper>
-				Hello World
+		<ThemeProvider theme={AppTheme}>
+			<Paper sx={{ minHeight: "100vh", borderRadius: 0 }}>
+				<Index />
 			</Paper>
 		</ThemeProvider>
 	);
