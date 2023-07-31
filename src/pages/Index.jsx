@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
+import { GoHome, GoSearch } from "react-icons/go";
 
 
 
@@ -18,20 +19,27 @@ export default function Index() {
 		gridTemplateRows: "1fr auto"
 	};
 
+	const itemBgColor = (theme) => theme.palette.background.default;
+
 	return (
 		<Box component="main" sx={{ padding: "8px" }}>
 
 			<Box display="grid" sx={gridConfig}>
 				<Box gridArea='left-sidebar'>
 
-					<Box>
-						<Box>
-							ICON
-							SECTION NAME
+					<Box 
+						component="nav"
+						display="flex"
+						flexDirection="column"
+						fontSize="1.7rem"
+					>
+						<Box padding="20px" sx={{ backgroundColor: itemBgColor}} >
+							<GoHome />
+							Início
 						</Box>
-						<Box>
-							ICON
-							SECTION NAME
+						<Box padding="20px">
+							<GoSearch />
+							Buscar
 						</Box>
 					</Box>
 				</Box>
