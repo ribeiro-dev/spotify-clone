@@ -1,6 +1,17 @@
-.nav {
+.container {
     padding: 20px;
+}
 
+.icon {
+    font-size: 1.7rem;
+}
+
+.text {
+    font-size: 1.1rem;
+    font-weight: bold !important;
+}
+
+.nav {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -10,13 +21,8 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
+    cursor: pointer;
 }
 
-.nav-item .text {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
 
-.icon {
-    font-size: 1.7rem;
-}
+
