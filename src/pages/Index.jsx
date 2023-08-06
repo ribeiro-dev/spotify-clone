@@ -7,8 +7,7 @@ import Sidebar from "./components/Sidebar";
 export default function Index() {
 	const [sidebarWidth, setSidebarWidth] = useState(300);
 	const gridConfig = {
-		height: "100%",
-		minHeight: "100%",
+		flexGrow: 1,
 		position: "relative",
 		rowGap: "8px",
 		gridTemplateAreas:
@@ -20,11 +19,8 @@ export default function Index() {
 
 
 	return (
-		<Box component="main" sx={{ padding: "8px" }}>
-
-			<Box display="grid" sx={gridConfig}>
-				<Sidebar />
-			</Box>
+		<Box display="grid" sx={gridConfig}>
+			<Sidebar />
 
 		</Box>
 	);
