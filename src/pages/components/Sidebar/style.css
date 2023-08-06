@@ -1,5 +1,5 @@
 .container {
-    padding: 20px;
+    padding: 20px 8px;
 }
 
 .icon {
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding: 20px 16px
 }
 
 .nav-item {
@@ -24,5 +25,19 @@
     cursor: pointer;
 }
 
+/* PLAYLISTS */
+.playlist-filters {
+    padding: 0px 8px;
+}
 
+.playlist-item .img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
 
+.playlist-item .subtitle {
+    font-size: .73rem;
+    font-weight: bold;
+    color: #7e7e7e;
+}

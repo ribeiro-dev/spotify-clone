@@ -1,10 +1,27 @@
-import { Box, Chip, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Chip, IconButton, List, ListItem, ListItemButton, Stack, Typography } from "@mui/material";
 
 import { BiLibrary } from "react-icons/bi";
 import { GoHome, GoSearch } from "react-icons/go";
 import { HiArrowRight, HiPlus } from "react-icons/hi";
 
 import "./style.css";
+
+function PlaylistItem() {
+	return (
+		<ListItem disablePadding className="playlist-item">
+			<ListItemButton sx={{ borderRadius: "4px" }}>
+				<Stack direction="row" alignItems="center" spacing={1}>
+					<img src="https://placehold.co/48x48" alt="Image Placeholder" className="img" />
+
+					<Stack>
+						<Typography variant="body1" className="title">Nome</Typography>
+						<Typography variant="body1" className="subtitle">Playlist • Podcast</Typography>
+					</Stack>
+				</Stack>
+			</ListItemButton>
+		</ListItem>
+	);
+}
 
 export default function Sidebar() {
 	const itemBgColor = (theme) => theme.palette.background.default;
@@ -42,13 +59,14 @@ export default function Sidebar() {
 			<Box
 				backgroundColor={itemBgColor}
 				borderRadius={3}
+				className="container"
 			>
 				<Box
 					component="header"
-					className="container"
 					display="flex"
 					alignItems="center"
 					justifyContent="space-between"
+					mb={2}
 				>
 					<Stack direction="row" alignItems="center" spacing={1}>
 						<BiLibrary className="icon" />
@@ -75,10 +93,24 @@ export default function Sidebar() {
 							<Chip label="Álbuns" />
 						</Stack>
 
-						<Chip label={<HiArrowRight />} sx={{  }} />
+						<Chip label={<HiArrowRight />} />
 					</Stack>
 				</Box>
 
+				<Box sx={{ overflowY: "auto" }}>
+					<Stack direction="row" justifyContent="space-between" my={2} className="playlist-filters">
+						<IconButton size="small">
+							<GoSearch />
+						</IconButton>
+						<Typography variant="body2">Recentes </Typography>
+					</Stack>
+
+					<List>
+						<PlaylistItem />
+						<PlaylistItem />
+						<PlaylistItem />
+					</List>
+				</Box>
 			</Box>
 		</Box>
 	);
