@@ -43,19 +43,19 @@ export default function Footer() {
 
 			<Stack flex={1} className="song-controls" alignItems="center" flexBasis="40%">
 				<Stack direction="row">
-					<IconButton className="player-buttons">
+					<IconButton disableRipple className="player-buttons">
 						<BiShuffle />
 					</IconButton>
-					<IconButton className="player-buttons">
+					<IconButton disableRipple className="player-buttons">
 						<MdSkipPrevious />
 					</IconButton>
-					<IconButton className="player-buttons" id="play-button">
+					<IconButton disableRipple className="player-buttons" id="play-button">
 						<FaCirclePlay />
 					</IconButton>
-					<IconButton className="player-buttons">
+					<IconButton disableRipple className="player-buttons">
 						<MdSkipNext />
 					</IconButton>
-					<IconButton className="player-buttons" sx={{transform: "rotate(180deg)"}}>
+					<IconButton disableRipple className="player-buttons" sx={{transform: "rotate(180deg)"}}>
 						<BiRepeat />
 					</IconButton>
 				</Stack>
@@ -64,14 +64,24 @@ export default function Footer() {
 					size="small"
 					sx={{
 						color: "white",
+						cursor: "default",
 						maxWidth: "600px",
 						height: 4,
 						"& .MuiSlider-thumb": {
-							transition: "0.3s cubic-bezier(.47,1.64,.41,.8)",
+							width: 0,
+							height: 0,
+							boxShadow: "none"
 						},
 						"& .MuiSlider-rail": {
 							opacity: 0.28,
 						},
+						"&:hover .MuiSlider-track": {
+							color: "#1db954"
+						},
+						"&:hover .MuiSlider-thumb": {
+							width: 10,
+							height: 10,
+						}
 					}}
 				/>
 			</Stack>

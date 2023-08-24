@@ -12,10 +12,20 @@ footer {
 }
 
 .player-buttons {
+   cursor: default !important;
    color: hsla(0,0%,100%,.7) !important;
+}
+
+.player-buttons:hover {
+   color: white !important;
 }
 
 .player-buttons#play-button {
    color: white !important;
+   transition: .1s ease;
    font-size: 2rem;
+}
+
+.player-buttons#play-button:hover {
+   scale: 1.05;
 }
