@@ -81,6 +81,10 @@ export default function Footer() {
 						"&:hover .MuiSlider-thumb": {
 							width: 10,
 							height: 10,
+						},
+						"& .MuiSlider-thumb.Mui-focusVisible": {
+							width: 10,
+							height: 10,
 						}
 					}}
 				/>
