@@ -1,3 +1,7 @@
+footer {
+   overflow: hidden;
+}
+
 .song-name {
    font-size: .85rem;
 }
@@ -5,4 +9,13 @@
 .artist-name {
    font-size: .75rem;
    color: #7e7e7e
+}
+
+.player-buttons {
+   color: hsla(0,0%,100%,.7) !important;
+}
+
+.player-buttons#play-button {
+   color: white !important;
+   font-size: 2rem;
 }
