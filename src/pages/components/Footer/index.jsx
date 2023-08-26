@@ -62,6 +62,7 @@ export default function Footer() {
 
 				<Slider
 					size="small"
+					value={15}
 					sx={{
 						color: "white",
 						cursor: "default",
