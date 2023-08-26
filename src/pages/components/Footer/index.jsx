@@ -26,8 +26,8 @@ export default function Footer() {
 			<Stack flex={1} className="current-song" direction="row" alignItems="center">
 				<Box component="img" borderRadius={1} mr={2} src="https://placehold.co/54x54" alt="Image Placeholder" className="img" />
 				<Stack direction="column" mr={3}>
-					<Typography className="song-name">Nome da Música</Typography>
-					<Typography className="artist-name">Artista</Typography>
+					<Typography variant="body2" className="song-name">Nome da Música</Typography>
+					<Typography variant="body2" className="artist-name">Artista</Typography>
 				</Stack>
 				<Box
 					sx={{
@@ -42,7 +42,7 @@ export default function Footer() {
 			</Stack>
 
 			<Stack flex={1} className="song-controls" alignItems="center" flexBasis="40%">
-				<Stack direction="row">
+				<Stack direction="row" spacing={2}>
 					<IconButton disableRipple className="player-buttons">
 						<BiShuffle />
 					</IconButton>
@@ -60,35 +60,47 @@ export default function Footer() {
 					</IconButton>
 				</Stack>
 
-				<Slider
-					size="small"
-					value={15}
-					sx={{
-						color: "white",
-						cursor: "default",
-						maxWidth: "600px",
-						height: 4,
-						"& .MuiSlider-thumb": {
-							width: 0,
-							height: 0,
-							boxShadow: "none"
-						},
-						"& .MuiSlider-rail": {
-							opacity: 0.28,
-						},
-						"&:hover .MuiSlider-track": {
-							color: "#1db954"
-						},
-						"&:hover .MuiSlider-thumb": {
-							width: 10,
-							height: 10,
-						},
-						"& .MuiSlider-thumb.Mui-focusVisible": {
-							width: 10,
-							height: 10,
-						}
-					}}
-				/>
+				<Box sx={{ width: "100%" }}>
+					<Stack
+						direction="row"
+						justifyContent="center"
+						alignItems="center"
+						spacing={1}
+					>
+						<Typography className="slider-timer" variant="body2">0:00</Typography>
+						<Slider
+							size="small"
+							defaultValue={15}
+							sx={{
+								color: "white",
+								cursor: "default",
+								maxWidth: "600px",
+								height: 4,
+								"& .MuiSlider-thumb": {
+									width: 0,
+									height: 0,
+									boxShadow: "none"
+								},
+								"& .MuiSlider-rail": {
+									opacity: 0.28,
+								},
+								"&:hover .MuiSlider-track": {
+									color: "#1db954"
+								},
+								"&:hover .MuiSlider-thumb": {
+									width: 10,
+									height: 10,
+								},
+								"& .MuiSlider-thumb.Mui-focusVisible": {
+									width: 10,
+									height: 10,
+								}
+							}}
+						/>
+						<Typography className="slider-timer" variant="body2">3:21</Typography>
+					</Stack>
+				</Box>
+
 			</Stack>
 
 			<Stack flex={1}>

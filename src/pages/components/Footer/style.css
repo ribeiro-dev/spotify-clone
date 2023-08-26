@@ -3,15 +3,16 @@ footer {
 }
 
 .song-name {
-   font-size: .85rem;
+   font-size: .85rem !important;
 }
 
 .artist-name {
-   font-size: .75rem;
+   font-size: .75rem !important;
    color: #7e7e7e
 }
 
 .player-buttons {
+   padding: 0 !important;
    cursor: default !important;
    color: hsla(0,0%,100%,.7) !important;
 }
@@ -28,4 +29,9 @@ footer {
 
 .player-buttons#play-button:hover {
    scale: 1.05;
+}
+
+.slider-timer {
+   font-size: .71rem !important;
+   color: #a8a8a8
 }
