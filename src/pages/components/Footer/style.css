@@ -2,6 +2,7 @@ footer {
    overflow: hidden;
 }
 
+/* LEFT BOX */
 .song-name {
    font-size: .85rem !important;
 }
@@ -11,6 +12,8 @@ footer {
    color: #7e7e7e
 }
 
+
+/* CENTER BOX */
 .player-buttons {
    padding: 0 !important;
    cursor: default !important;
@@ -34,4 +37,15 @@ footer {
 .slider-timer {
    font-size: .71rem !important;
    color: #a8a8a8
+}
+
+
+/* RIGHT BOX */
+.buttons {
+   font-size: 1.2rem;
+   color: #a8a8a8;
+}
+
+.buttons:hover {
+   color: white;
 }
