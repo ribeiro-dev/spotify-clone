@@ -8,7 +8,7 @@ function App() {
 
 	return (
 		<ThemeProvider theme={AppTheme}>
-			<Paper sx={{ minHeight: "100vh", borderRadius: 0, backgroundColor: "#000", backgroundImage: "none" }}>
+			<Paper sx={{ minHeight: "100vh", borderRadius: 0, backgroundColor: "#000", backgroundImage: "none", display: "flex", flexDirection: "column" }}>
 				<Index />
 			</Paper>
 		</ThemeProvider>

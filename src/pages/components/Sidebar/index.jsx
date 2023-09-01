@@ -60,6 +60,7 @@ export default function Sidebar() {
 				backgroundColor={itemBgColor}
 				borderRadius={3}
 				className="container"
+				sx={{ flex: 1 }}
 			>
 				<Box
 					component="header"

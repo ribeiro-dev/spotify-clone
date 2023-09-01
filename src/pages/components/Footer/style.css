@@ -1,0 +1,51 @@
+footer {
+   overflow: hidden;
+}
+
+/* LEFT BOX */
+.song-name {
+   font-size: .85rem !important;
+}
+
+.artist-name {
+   font-size: .75rem !important;
+   color: #7e7e7e
+}
+
+
+/* CENTER BOX */
+.player-buttons {
+   padding: 0 !important;
+   cursor: default !important;
+   color: hsla(0,0%,100%,.7) !important;
+}
+
+.player-buttons:hover {
+   color: white !important;
+}
+
+.player-buttons#play-button {
+   color: white !important;
+   transition: .1s ease;
+   font-size: 2rem;
+}
+
+.player-buttons#play-button:hover {
+   scale: 1.05;
+}
+
+.slider-timer {
+   font-size: .71rem !important;
+   color: #a8a8a8
+}
+
+
+/* RIGHT BOX */
+.buttons {
+   font-size: 1.2rem;
+   color: #a8a8a8;
+}
+
+.buttons:hover {
+   color: white;
+}
