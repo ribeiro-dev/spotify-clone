@@ -1,0 +1,10 @@
+.navigation-buttons .wrapper {
+   background-color: rgba(0,0,0,0.56);
+   padding: 6px;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   cursor: pointer
+}

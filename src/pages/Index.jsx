@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 import { Box } from "@mui/material";
+
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import Content from "./components/Content";
 
 
 export default function Index() {
@@ -10,7 +12,7 @@ export default function Index() {
 	const gridConfig = {
 		flexGrow: 1,
 		position: "relative",
-		rowGap: "8px",
+		gap: "8px",
 		gridTemplateAreas:
 			`"left-sidebar main-view right-sidebar"
 		"now-playing-bar now-playing-bar now-playing-bar"`,
@@ -22,7 +24,7 @@ export default function Index() {
 	return (
 		<Box display="grid" sx={gridConfig}>
 			<Sidebar />
-
+			<Content />
 			<Footer />
 		</Box>
 	);
