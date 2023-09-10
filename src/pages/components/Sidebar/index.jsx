@@ -27,7 +27,7 @@ export default function Sidebar() {
 	const itemBgColor = (theme) => theme.palette.background.default;
 
 	return (
-		<Box gridArea="left-sidebar" display="flex" flexDirection="column" gap={1}>
+		<Box gridArea="left-sidebar" display="flex" flexDirection="column" gap={1} pl={1}>
 
 			<Box
 				component="nav"

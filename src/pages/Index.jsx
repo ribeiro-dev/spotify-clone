@@ -22,7 +22,7 @@ export default function Index() {
 
 
 	return (
-		<Box display="grid" sx={gridConfig}>
+		<Box display="grid" pt={1} sx={gridConfig}>
 			<Sidebar />
 			<Content />
 			<Footer />
