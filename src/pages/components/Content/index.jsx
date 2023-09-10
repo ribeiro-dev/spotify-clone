@@ -142,11 +142,11 @@ export default function Content() {
 							<Box mb={3}>
 								<Stack direction="row" alignItems="center" spacing={1}>
 									<VscVerifiedFilled className="icon-verified" fontSize={25} />
-									<Typography className="text-gray" variant="body2" fontSize={14}>Artista Verificado</Typography>
+									<Typography variant="body2" fontSize={14}>Artista Verificado</Typography>
 								</Stack>
 								<Typography variant="h1" fontWeight="bold">MC Cabelinho</Typography>
 							</Box>
-							<Typography className="text-gray">9.848.122 ouvintes mensais</Typography>
+							<Typography>9.848.122 ouvintes mensais</Typography>
 						</Box>
 					</Stack>
 				</Box>
