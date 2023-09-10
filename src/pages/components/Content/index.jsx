@@ -60,7 +60,7 @@ export default function Content() {
 		<Stack
 			component="main"
 			gridArea="main-view"
-			borderRadius={1}
+			borderRadius={2}
 		>
 			<Box
 				padding="16px"
@@ -72,6 +72,8 @@ export default function Content() {
 			>
 				{/* COLOR BOXES */}
 				<Box sx={{
+					borderTopLeftRadius: "inherit",
+					borderTopRightRadius: "inherit",
 					display: "block",
 					height: "100%",
 					left: "0",
@@ -158,6 +160,8 @@ export default function Content() {
 				sx={{
 					position: "relative",
 					backgroundColor: "#121212",
+					borderBottomLeftRadius: "inherit",
+					borderBottomRightRadius: "inherit"
 				}}
 			>
 				{/* COLOR BOX */}
