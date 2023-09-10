@@ -8,8 +8,11 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { VscVerifiedFilled } from "react-icons/vsc";
 
 import "./style.css";
+import topTracks from "../../../mocks/artistTopTracks";
 
-function SongItem({ name, duration, explicit, urlImg }) {
+
+
+function SongItem({ position, name, duration, explicit, urlImg }) {
 	const durationInMinutes = (duration / 60000).toFixed(2).replace(".", ":");
 
 	return (
@@ -33,7 +36,7 @@ function SongItem({ name, duration, explicit, urlImg }) {
 						spacing={2}
 						flexBasis="60%"
 					>
-						<Typography>1</Typography>
+						<Typography>{position}</Typography>
 						<Box component="img" src={urlImg} width="40px" height="40px" />
 						<Box>
 							<Typography>{name}</Typography>
@@ -49,6 +52,7 @@ function SongItem({ name, duration, explicit, urlImg }) {
 		</ListItem>
 	);
 }
+
 
 export default function Content() {
 
@@ -176,11 +180,17 @@ export default function Content() {
 					<Typography fontWeight="bold" variant="h6">Populares</Typography>
 
 					<List mb={2}>
-						<SongItem name="X1" explicit={true} urlImg={"https://placehold.co/40x40"} reproductions={"Reproduções"} duration={188852} />
-						<SongItem name="MINHA CURA" explicit={false} urlImg={"https://placehold.co/40x40"} reproductions={"Reproduções"} duration={150000} />
-						<SongItem name="FOGO E GASOLINA" explicit={true} urlImg={"https://placehold.co/40x40"} reproductions={"Reproduções"} duration={300000} />
-						<SongItem name="BEM MELHOR" explicit={false} urlImg={"https://placehold.co/40x40"} reproductions={"Reproduções"} duration={300000} />
-						<SongItem name="CAOS" explicit={false} urlImg={"https://placehold.co/40x40"} reproductions={"Reproduções"} duration={300000} />
+						{topTracks.map((track, index) => (
+							<SongItem
+								position={index+1}
+								key={track.name}
+								name={track.name}
+								explicit={track.explicit}
+								urlImg={track.img}
+								reproductions={"Reproduções"}
+								duration={track.duration}
+							/>
+						))}
 					</List>
 					<Typography
 						ml={1}
@@ -206,6 +216,7 @@ export default function Content() {
 
 
 SongItem.propTypes = {
+	position: PropTypes.number.isRequired,
 	name: PropTypes.string.isRequired,
 	duration: PropTypes.number.isRequired,
 	explicit: PropTypes.bool.isRequired,
