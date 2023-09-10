@@ -65,150 +65,186 @@ export default function Content() {
 			<Box
 				padding="16px"
 				sx={{
+					position: "relative",
 					borderTopLeftRadius: "inherit",
 					borderTopRightRadius: "inherit",
-					backgroundImage: "linear-gradient(to bottom, #4c4c4c, #424242, #383838, #2e2e2e, #252525)"
 				}}
 			>
-				<Stack
-					direction="row"
-					justifyContent="space-between"
-					alignItems="center"
-				>
-					<Stack className="navigation-buttons" direction="row" spacing={1}>
-						<Box className="wrapper">
-							<AiOutlineLeft fontSize="1.3rem" />
-						</Box>
-						<Box className="wrapper">
-							<AiOutlineRight fontSize="1.3rem" />
-						</Box>
-					</Stack>
+				{/* COLOR BOXES */}
+				<Box sx={{
+					display: "block",
+					height: "100%",
+					left: "0",
+					position: "absolute",
+					top: "0",
+					width: "100%",
+					backgroundColor: "rgb(176, 48, 72)"
+				}} />
+				<Box sx={{
+					display: "block",
+					height: "100%",
+					left: "0",
+					position: "absolute",
+					top: "0",
+					width: "100%",
+					background: "linear-gradient(transparent 0,rgba(0,0,0,.5) 100%)"
+				}} />
+				{/* END COLOR BOXES */}
 
+				<Box position="relative">
 					<Stack
 						direction="row"
+						justifyContent="space-between"
 						alignItems="center"
-						spacing={1}
-						sx={{
-							backgroundColor: "rgba(0,0,0,0.56)",
-							padding: "6px 10px",
-							borderRadius: "20px",
-							"&:hover": {
-								transform: "scale(1.05)"
-							}
-						}}
 					>
-						<BiDownArrowCircle fontSize={20} />
-						<Typography fontSize={13} fontWeight="bold">Instalar Aplicativo</Typography>
+						<Stack className="navigation-buttons" direction="row" spacing={1}>
+							<Box className="wrapper">
+								<AiOutlineLeft fontSize="1.3rem" />
+							</Box>
+							<Box className="wrapper">
+								<AiOutlineRight fontSize="1.3rem" />
+							</Box>
+						</Stack>
+
+						<Stack
+							direction="row"
+							alignItems="center"
+							spacing={1}
+							sx={{
+								backgroundColor: "rgba(0,0,0,0.56)",
+								padding: "6px 10px",
+								borderRadius: "20px",
+								"&:hover": {
+									transform: "scale(1.05)"
+								}
+							}}
+						>
+							<BiDownArrowCircle fontSize={20} />
+							<Typography fontSize={13} fontWeight="bold">Instalar Aplicativo</Typography>
+						</Stack>
 					</Stack>
-				</Stack>
 
-				<Stack direction="row" alignItems="center" mt={2}>
-					<Box
-						component="img"
-						src="https://i.scdn.co/image/ab67616100005174cb8060f9f0e9249f6df52559"
-						alt="MC Cabelinho"
-						sx={{
-							width: "232px",
-							height: "232px",
-							borderRadius: "50%",
-							boxShadow: "0 4px 60px rgba(0,0,0,.5)",
-							objectFit: "cover"
-						}}
-					/>
+					<Stack direction="row" alignItems="center" mt={2}>
+						<Box
+							component="img"
+							src="https://i.scdn.co/image/ab67616100005174cb8060f9f0e9249f6df52559"
+							alt="MC Cabelinho"
+							sx={{
+								width: "232px",
+								height: "232px",
+								borderRadius: "50%",
+								boxShadow: "0 4px 60px rgba(0,0,0,.5)",
+								objectFit: "cover"
+							}}
+						/>
 
-					<Box ml={3} pt={2}>
-						<Box mb={3}>
-							<Stack direction="row" alignItems="center" spacing={1}>
-								<VscVerifiedFilled className="icon-verified" fontSize={25} />
-								<Typography className="text-gray" variant="body2" fontSize={14}>Artista Verificado</Typography>
-							</Stack>
-							<Typography variant="h1" fontWeight="bold">MC Cabelinho</Typography>
+						<Box ml={3} pt={2}>
+							<Box mb={3}>
+								<Stack direction="row" alignItems="center" spacing={1}>
+									<VscVerifiedFilled className="icon-verified" fontSize={25} />
+									<Typography className="text-gray" variant="body2" fontSize={14}>Artista Verificado</Typography>
+								</Stack>
+								<Typography variant="h1" fontWeight="bold">MC Cabelinho</Typography>
+							</Box>
+							<Typography className="text-gray">9.848.122 ouvintes mensais</Typography>
 						</Box>
-						<Typography className="text-gray">9.848.122 ouvintes mensais</Typography>
-					</Box>
-				</Stack>
+					</Stack>
+				</Box>
 			</Box>
 
 			<Box
 				padding="24px 20px"
 				flex={1}
 				sx={{
-					backgroundColor: "rgb(83, 83, 83)",
-					backgroundImage: "linear-gradient(to bottom, #272626, #222121, #1c1c1c, #171717, #121212)"
+					position: "relative",
+					backgroundColor: "#121212",
 				}}
 			>
-				<Stack direction="row" alignItems="center" spacing={4} mb={2}>
-					<Box
-						sx={{
-							display: "inline-block",
-							cursor: "pointer",
-							"&:hover": {
-								transform: "scale(1.05)"
-							}
-						}}
-					>
-						<FaCirclePlay color="#1db954" fontSize={50} />
-					</Box>
+				{/* COLOR BOX */}
+				<Box sx={{
+					backgroundImage: "linear-gradient(rgba(0,0,0,.6) 0, #121212 100%)",
+					height: "232px",
+					position: "absolute",
+					top: 0,
+					left: 0,
+					width: "100%",
+					backgroundColor: "rgb(176, 48, 72)"
+				}} />
 
-					<Chip
-						label="Seguir"
-						sx={{
-							fontWeight: "bold",
-							border: "1px solid #878787",
-							background: "transparent",
-							"&:hover": {
+				<Box position="relative">
+					<Stack direction="row" alignItems="center" spacing={4} mb={2}>
+						<Box
+							sx={{
+								display: "inline-block",
 								cursor: "pointer",
-								border: "1px solid white",
-							}
-						}}
-					/>
+								"&:hover": {
+									transform: "scale(1.05)"
+								}
+							}}
+						>
+							<FaCirclePlay color="#1db954" fontSize={50} />
+						</Box>
 
-					<Box
-						sx={{
-							color: "#A7A7A7",
-							"& :hover": {
-								color: "white",
-								cursor: "pointer",
-							}
-						}}
-					>
-						<BiDotsHorizontalRounded fontSize={30} />
-					</Box>
-				</Stack>
+						<Chip
+							label="Seguir"
+							sx={{
+								fontWeight: "bold",
+								border: "1px solid #878787",
+								background: "transparent",
+								"&:hover": {
+									cursor: "pointer",
+									border: "1px solid white",
+								}
+							}}
+						/>
 
-				<Stack>
-					<Typography fontWeight="bold" variant="h6">Populares</Typography>
+						<Box
+							sx={{
+								color: "#A7A7A7",
+								"& :hover": {
+									color: "white",
+									cursor: "pointer",
+								}
+							}}
+						>
+							<BiDotsHorizontalRounded fontSize={30} />
+						</Box>
+					</Stack>
 
-					<List mb={2}>
-						{topTracks.map((track, index) => (
-							<SongItem
-								position={index+1}
-								key={track.name}
-								name={track.name}
-								explicit={track.explicit}
-								urlImg={track.img}
-								reproductions={"Reproduções"}
-								duration={track.duration}
-							/>
-						))}
-					</List>
-					<Typography
-						ml={1}
-						component="span"
-						className="text-gray"
-						fontWeight="bold"
-						variant="body2"
-						sx={{
-							display: "contents",
-							"&:hover": {
-								cursor: "default !important",
-								color: "white"
-							}
-						}}
-					>
+					<Stack>
+						<Typography fontWeight="bold" variant="h6">Populares</Typography>
+
+						<List mb={2}>
+							{topTracks.map((track, index) => (
+								<SongItem
+									position={index+1}
+									key={track.name}
+									name={track.name}
+									explicit={track.explicit}
+									urlImg={track.img}
+									reproductions={"Reproduções"}
+									duration={track.duration}
+								/>
+							))}
+						</List>
+						<Typography
+							ml={1}
+							component="span"
+							className="text-gray"
+							fontWeight="bold"
+							variant="body2"
+							sx={{
+								display: "contents",
+								"&:hover": {
+									cursor: "default !important",
+									color: "white"
+								}
+							}}
+						>
 						Ver mais
-					</Typography>
-				</Stack>
+						</Typography>
+					</Stack>
+				</Box>
 			</Box>
 		</Stack>
 	);
