@@ -61,6 +61,7 @@ export default function Content() {
 			component="main"
 			gridArea="main-view"
 			borderRadius={2}
+			sx={{ overflowX: "hidden", overflowY: "auto"}}
 		>
 			<Box
 				padding="16px"

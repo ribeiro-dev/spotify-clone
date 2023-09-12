@@ -27,7 +27,7 @@ export default function Sidebar() {
 	const itemBgColor = (theme) => theme.palette.background.default;
 
 	return (
-		<Box gridArea="left-sidebar" display="flex" flexDirection="column" gap={1} pl={1}>
+		<Box gridArea="left-sidebar" display="flex" flexDirection="column" gap={1} pl={1} overflowY="scroll">
 
 			<Box
 				component="nav"
@@ -60,7 +60,10 @@ export default function Sidebar() {
 				backgroundColor={itemBgColor}
 				borderRadius={3}
 				className="container"
-				sx={{ flex: 1 }}
+				display="flex"
+				flexDirection="column"
+				flex={1}
+				overflow="hidden"
 			>
 				<Box
 					component="header"
@@ -106,7 +109,10 @@ export default function Sidebar() {
 						<Typography variant="body2">Recentes </Typography>
 					</Stack>
 
-					<List>
+					<List overflowY="auto">
+						<PlaylistItem />
+						<PlaylistItem />
+						<PlaylistItem />
 						<PlaylistItem />
 						<PlaylistItem />
 						<PlaylistItem />

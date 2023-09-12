@@ -17,7 +17,7 @@ export default function Index() {
 			`"left-sidebar main-view right-sidebar"
 		"now-playing-bar now-playing-bar now-playing-bar"`,
 		gridTemplateColumns: `${sidebarWidth}px 1fr 0`,
-		gridTemplateRows: "1fr 80px"
+		gridTemplateRows: "calc(100vh - 90px) 1fr"
 	};
 
 
