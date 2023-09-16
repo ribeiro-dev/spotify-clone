@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 import { Box } from "@mui/material";
+
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import Content from "./components/Content";
 
 
 export default function Index() {
@@ -10,19 +12,19 @@ export default function Index() {
 	const gridConfig = {
 		flexGrow: 1,
 		position: "relative",
-		rowGap: "8px",
+		gap: "8px",
 		gridTemplateAreas:
 			`"left-sidebar main-view right-sidebar"
 		"now-playing-bar now-playing-bar now-playing-bar"`,
 		gridTemplateColumns: `${sidebarWidth}px 1fr 0`,
-		gridTemplateRows: "1fr 80px"
+		gridTemplateRows: "calc(100vh - 90px) 1fr"
 	};
 
 
 	return (
-		<Box display="grid" sx={gridConfig}>
+		<Box display="grid" pt={1} sx={gridConfig}>
 			<Sidebar />
-
+			<Content />
 			<Footer />
 		</Box>
 	);
