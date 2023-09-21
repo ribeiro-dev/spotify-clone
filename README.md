@@ -1,5 +1,6 @@
 # Spotify Clone
-![Imagem do projeto](https://github.com/ribeiro-dev/spotify-clone/assets/67253984/2f5f5e84-3646-4213-a43c-fff15993bf75)
+![Imagem do projeto](https://github.com/ribeiro-dev/spotify-clone/assets/67253984/f2da29ff-a6da-4797-9a41-ccde8dbeca91)
+
 
 ## Visão Geral
 Este é um projeto desenvolvido como parte do meu portfólio e com o intuito de pôr em prática minhas habilidades em React. <br>
