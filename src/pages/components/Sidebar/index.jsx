@@ -33,7 +33,7 @@ export default function Sidebar() {
 
 			<Box
 				component="nav"
-				className="container nav"
+				className="container nav text-gray"
 				backgroundColor={itemBgColor}
 				borderRadius={3}
 			>
@@ -41,7 +41,7 @@ export default function Sidebar() {
 					<GoHome className="icon" />
 					<Typography
 						variant="body1"
-						className="text text-gray"
+						className="text"
 						cursor="inherit"
 					>
 						Início
@@ -52,7 +52,7 @@ export default function Sidebar() {
 					<GoSearch className="icon" />
 					<Typography
 						variant="body1"
-						className="text text-gray"
+						className="text"
 					>
 						Buscar
 					</Typography>
@@ -112,7 +112,7 @@ export default function Sidebar() {
 						<IconButton size="small">
 							<GoSearch />
 						</IconButton>
-						<Typography variant="body2">Recentes </Typography>
+						<Typography variant="body2" className="text-gray">Recentes </Typography>
 					</Stack>
 
 					<List overflowY="auto">
