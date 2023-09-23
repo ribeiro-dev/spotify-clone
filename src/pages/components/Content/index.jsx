@@ -5,7 +5,6 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BiDotsHorizontalRounded, BiDownArrowCircle } from "react-icons/bi";
 import { BsExplicitFill } from "react-icons/bs";
 import { FaCirclePlay } from "react-icons/fa6";
-import { VscVerifiedFilled } from "react-icons/vsc";
 
 import "./style.css";
 import artistData from "../../../mocks/artistData";
@@ -146,7 +145,7 @@ export default function Content() {
 							<Box mb={3}>
 								{artistData.verified &&
 									<Stack direction="row" alignItems="center" spacing={1}>
-										<VscVerifiedFilled className="icon-verified" fontSize={25} />
+										<Box component="img" src="/verified-badge.png" />
 										<Typography variant="body2" fontSize={14}>Artista Verificado</Typography>
 									</Stack>
 								} 
