@@ -1,5 +1,5 @@
 # Spotify Clone
-![Imagem do projeto](https://github.com/ribeiro-dev/spotify-clone/assets/67253984/f2da29ff-a6da-4797-9a41-ccde8dbeca91)
+![Imagem do projeto](https://github.com/ribeiro-dev/spotify-clone/assets/67253984/4b295669-f6ac-4848-b367-2fc483c205dd)
 
 
 ## Sobre
