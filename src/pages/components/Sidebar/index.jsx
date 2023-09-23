@@ -41,7 +41,8 @@ export default function Sidebar() {
 					<GoHome className="icon" />
 					<Typography
 						variant="body1"
-						className="text"
+						className="text text-gray"
+						cursor="inherit"
 					>
 						Início
 					</Typography>
@@ -51,7 +52,7 @@ export default function Sidebar() {
 					<GoSearch className="icon" />
 					<Typography
 						variant="body1"
-						className="text"
+						className="text text-gray"
 					>
 						Buscar
 					</Typography>
@@ -74,17 +75,17 @@ export default function Sidebar() {
 					justifyContent="space-between"
 					mb={2}
 				>
-					<Stack direction="row" alignItems="center" spacing={1}>
+					<Stack direction="row" alignItems="center" spacing={1} className="text-gray">
 						<BiLibrary className="icon" />
 						<Typography className="text">Sua Biblioteca</Typography>
 					</Stack>
 
 					<Stack direction="row" spacing={1}>
 						<IconButton size="small" >
-							<HiPlus />
+							<HiPlus className="text-gray" />
 						</IconButton>
 						<IconButton size="small" >
-							<HiArrowRight />
+							<HiArrowRight className="text-gray" />
 						</IconButton>
 					</Stack>
 				</Box>
