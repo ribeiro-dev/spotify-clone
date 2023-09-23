@@ -28,10 +28,18 @@ export default function Footer() {
 		>
 
 			<Stack flex={1} className="current-song" direction="row" alignItems="center">
-				<Box component="img" borderRadius={1} mr={2} src="https://placehold.co/54x54" alt="Image Placeholder" className="img" />
+				<Box
+					component="img"
+					className="img"
+					mr={2}
+					borderRadius={1}
+					src="https://i.scdn.co/image/ab67616d00004851d84eb47817bacd302f0529a4"
+					alt="Image Placeholder"
+					sx={{ width: "54px", height: "54px" }}
+				/>
 				<Stack direction="column" mr={3}>
-					<Typography variant="body2" className="song-name">Nome da Música</Typography>
-					<Typography variant="body2" className="artist-name">Artista</Typography>
+					<Typography variant="body2" className="song-name">Mourning</Typography>
+					<Typography variant="body2" className="artist-name">Post Malone</Typography>
 				</Stack>
 				<Box
 					sx={{
