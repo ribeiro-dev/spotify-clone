@@ -68,41 +68,44 @@ export default function Sidebar() {
 				flex={1}
 				overflow="hidden"
 			>
-				<Box
-					component="header"
-					display="flex"
-					alignItems="center"
-					justifyContent="space-between"
-					mb={2}
-				>
-					<Stack direction="row" alignItems="center" spacing={1} className="text-gray">
-						<BiLibrary className="icon" />
-						<Typography className="text">Sua Biblioteca</Typography>
-					</Stack>
-
-					<Stack direction="row" spacing={1}>
-						<IconButton size="small" >
-							<HiPlus className="text-gray" />
-						</IconButton>
-						<IconButton size="small" >
-							<HiArrowRight className="text-gray" />
-						</IconButton>
-					</Stack>
-				</Box>
-
-				<Box>
-					<Stack direction="row" position="relative">
-						<Stack direction="row" spacing={1} sx={{ overflowX: "hidden" }}>
-							<Chip label="Playlists" />
-							<Chip label="Artistas" />
-							<Chip label="Álbuns" />
-							<Chip label="Álbuns" />
-							<Chip label="Álbuns" />
+				<Box paddingX={1}>
+					<Box
+						component="header"
+						display="flex"
+						alignItems="center"
+						justifyContent="space-between"
+						mb={2}
+					>
+						<Stack direction="row" alignItems="center" spacing={1} className="text-gray">
+							<BiLibrary className="icon" />
+							<Typography className="text">Sua Biblioteca</Typography>
 						</Stack>
 
-						<Chip label={<HiArrowRight />} />
-					</Stack>
+						<Stack direction="row" spacing={1}>
+							<IconButton size="small" >
+								<HiPlus className="text-gray" />
+							</IconButton>
+							<IconButton size="small" >
+								<HiArrowRight className="text-gray" />
+							</IconButton>
+						</Stack>
+					</Box>
+
+					<Box>
+						<Stack direction="row" position="relative">
+							<Stack direction="row" spacing={1} sx={{ overflowX: "hidden" }}>
+								<Chip label="Playlists" />
+								<Chip label="Artistas" />
+								<Chip label="Álbuns" />
+								<Chip label="Álbuns" />
+								<Chip label="Álbuns" />
+							</Stack>
+
+							<Chip label={<HiArrowRight />} />
+						</Stack>
+					</Box>
 				</Box>
+
 
 				<Box sx={{ overflowY: "auto" }}>
 					<Stack direction="row" justifyContent="space-between" my={2} className="playlist-filters">
